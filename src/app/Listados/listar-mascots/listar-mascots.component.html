@@ -1,0 +1,34 @@
+
+
+<div style="background-image: url(../../assets/img/sfondo_listar); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+    <div class="body-box" style="margin: 5%;">
+<p>listado mascotas</p>
+
+<form>
+<table class="table">
+    <thead class="thead-light">
+    <tr>
+        <th scope="col">id</th>
+        <th scope="col">nombre</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Precio</th>
+        
+       
+    </tr>
+</thead>
+    <tr *ngFor="let mascota of mascotas">
+        
+        <td>{{mascota.id}}</td>
+        <td>{{mascota.nombre}}</td>
+        <td>{{mascota.tipo}}</td>
+        <td>{{mascota.precio}}</td>
+        <td><button class="btn btn-secondary" (click)='modificarMascota(mascota.id)'>Modificar</button></td>  
+    <td><button class="btn btn-info" (click)='venderMascota(mascota.id)'>Vender</button></td>        
+    </tr>
+    <button class="btn btn-success" (click)='anadirMascota(id)'>alta Mascotas</button>
+
+</table>
+
+</form>
+</div>
+</div>

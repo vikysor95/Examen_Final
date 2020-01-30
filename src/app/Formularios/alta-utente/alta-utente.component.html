@@ -1,0 +1,41 @@
+<p>Alta Usuario</p>
+
+<form>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"  id="nombre" name="nombre" [(ngModel)]="nombre">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Apellido</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"  id="apellido" name="apellido" [(ngModel)]="apellido">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">N.telefono</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"  id="telefono" name="telefono" [(ngModel)]="telefono">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Username</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"  id="username" name="username" [(ngModel)]="username">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Pasword</span>
+        </div>
+        <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"  id="pasword" name="pasword" [(ngModel)]="pasword">
+    </div>
+<button type="submit" class="btn btn-success" (click)="altaUsuario()">Alta usuario</button>
+
+</form>

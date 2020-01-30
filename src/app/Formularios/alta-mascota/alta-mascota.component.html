@@ -1,0 +1,41 @@
+<p>Alta Mascota</p>
+
+<form>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">ID</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="id" name="id" [(ngModel)]="id">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"  id="nombre" name="nombre" [(ngModel)]="nombre">
+    </div>
+
+    
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Tipo</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"  id="tipo" name="tipo" [(ngModel)]="tipo">
+    </div>
+
+    
+
+    
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Precio</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"  id="precio" name="precio" [(ngModel)]="precio">
+    </div>
+
+<button type="submit" class="btn btn-success" (click)="altaMascota()">Alta comprador</button>
+
+</form>
